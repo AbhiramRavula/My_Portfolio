@@ -1,6 +1,7 @@
-import { ReactNode } from 'react';
-import { FaJava, FaPython, FaUnity, FaCubes, FaAndroid, FaBrain, FaGamepad, FaDesktop, FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaGitAlt, FaServer } from 'react-icons/fa';
-import { SiCsharp, SiJavascript, SiTypescript, SiC, SiCplusplus, SiNextdotjs, SiTailwindcss, SiFirebase, SiVercel, SiOracle } from 'react-icons/si';
+import type { ReactNode } from 'react';
+import { FaJava, FaPython, FaUnity, FaCubes, FaAndroid, FaBrain, FaGamepad, FaDesktop, FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaGitAlt, FaServer, FaDatabase } from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiC, SiCplusplus, SiNextdotjs, SiTailwindcss, SiFirebase, SiVercel } from 'react-icons/si';
+import { DiCsharp } from 'react-icons/di';
 
 type Skill = {
   name: string;
@@ -17,7 +18,7 @@ export const Skills = () => {
     {
       title: 'Languages',
       skills: [
-        { name: 'C#', icon: <SiCsharp /> },
+        { name: 'C#', icon: <DiCsharp /> },
         { name: 'JavaScript', icon: <SiJavascript /> },
         { name: 'TypeScript', icon: <SiTypescript /> },
         { name: 'Python', icon: <FaPython /> },
@@ -56,7 +57,7 @@ export const Skills = () => {
         { name: 'Firebase', icon: <SiFirebase /> },
         { name: 'Vercel', icon: <SiVercel /> },
         { name: 'Hostinger', icon: <FaServer /> },
-        { name: 'Oracle Cloud (OCI)', icon: <SiOracle /> }
+        { name: 'Oracle Cloud (OCI)', icon: <FaDatabase /> }
       ]
     }
   ];
